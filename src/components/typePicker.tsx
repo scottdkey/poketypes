@@ -1,26 +1,8 @@
 import React, { FC, useState } from "react"
+import { PokeTypes, PokemonTypesInterface } from "./PokemonType"
+import "./typePicker.scss"
 
-const pokeTypes = [
-  "bug",
-  "dark",
-  "dragon",
-  "electric",
-  "fairy",
-  "fighting",
-  "Fire",
-  "flying",
-  "ghost",
-  "grass",
-  "ground",
-  "ice",
-  "normal",
-  "poison",
-  "psychic",
-  "rock",
-  "steel",
-  "water"
 
-]
 
 const TypePicker: FC = () => {
   const [selected, setSelected] = useState<string>("test")
@@ -28,9 +10,9 @@ const TypePicker: FC = () => {
   const setState = (type: string) => {
     setSelected(type)
   }
-  const RenderAllTypes = ({ list }: { list: Array<string> }) => {
-    return <>{list.map((item: string) => (
-      <button onClick={() => setState(item)} key={item}>{item}</button>
+  const RenderAllTypes = ({ list }: { list: Array<PokemonTypesInterface> }) => {
+    return <>{list.map((item: PokemonTypesInterface) => (
+      <item.icon className={`icon ${item.type}`} key={item.type} onClick={() => setState(item.type)} />
     ))}</>
   }
 
@@ -38,7 +20,7 @@ const TypePicker: FC = () => {
   return (
     <div>
       <div>Selected: {selected}</div>
-      <RenderAllTypes list={pokeTypes} />
+      <RenderAllTypes list={PokeTypes} />
     </div>
   )
 }
