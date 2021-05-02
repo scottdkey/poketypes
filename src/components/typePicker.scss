@@ -163,7 +163,13 @@
 }
 
 .circle-container {
-    @include on-circle($item-count: 18, $circle-size: 20em, $item-size: 2.5em);
+    @include on-circle($item-count: 18, $circle-size: 10em, $item-size: 1.75em);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     .icon {
         display: block;
         max-width: 100%;
@@ -178,14 +184,19 @@
         }
     }
 }
+.circleGroup {
+    position: relative;
+    margin: auto;
+}
 
 .selected {
     @extend .icon;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    width: 100px;
-    height: 100px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &:hover {
+    }
 }
