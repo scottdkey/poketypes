@@ -7,7 +7,6 @@ function App(): JSX.Element {
     <div className="App">
       <header className="App-header">
         <TypePicker />
-        <TypePicker />
       </header>
     </div>
   );

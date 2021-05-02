@@ -1,8 +1,15 @@
+.picker-container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
 .icon {
     border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    margin:auto;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    position: absolute;
     transition: 200ms all;
     &:hover {
         filter: saturate(200%);
@@ -11,99 +18,174 @@
     }
 }
 
-
 .icon img {
-    height: 60%;
-    width: 60%;
+    height: 50px;
+    width: 50px;
     margin: 20%;
 }
 
 .bug {
-    background: #92BC2C;
-    box-shadow: 0 0 20px #92BC2C;
+    @extend .icon;
+    background: #92bc2c;
+    box-shadow: 0 0 20px #92bc2c;
 }
 
 .dark {
+    @extend .icon;
     background: #595761;
     box-shadow: 0 0 20px #595761;
 }
 
 .dragon {
-    background: #0C69C8;
-    box-shadow: 0 0 20px #0C69C8;
+    @extend .icon;
+    background: #0c69c8;
+    box-shadow: 0 0 20px #0c69c8;
 }
 
 .electric {
-    background: #F2D94E;
-    box-shadow: 0 0 20px #F2D94E;
+    @extend .icon;
+    background: #f2d94e;
+    box-shadow: 0 0 20px #f2d94e;
 }
 
 .fire {
-    background: #FBA54C;
-    box-shadow: 0 0 20px #FBA54C;
+    @extend .icon;
+    background: #fba54c;
+    box-shadow: 0 0 20px #fba54c;
 }
 
 .fairy {
-    background: #EE90E6;
-    box-shadow: 0 0 20px #EE90E6;
+    @extend .icon;
+    background: #ee90e6;
+    box-shadow: 0 0 20px #ee90e6;
 }
 
 .fighting {
-    background: #D3425F;
-    box-shadow: 0 0 20px #D3425F;
+    @extend .icon;
+    background: #d3425f;
+    box-shadow: 0 0 20px #d3425f;
 }
 
 .flying {
-    background: #A1BBEC;
-    box-shadow: 0 0 20px #A1BBEC;
+    @extend .icon;
+    background: #a1bbec;
+    box-shadow: 0 0 20px #a1bbec;
 }
 
 .ghost {
-    background: #5F6DBC;
-    box-shadow: 0 0 20px #5F6DBC;
+    @extend .icon;
+    background: #5f6dbc;
+    box-shadow: 0 0 20px #5f6dbc;
 }
 
 .grass {
-    background: #5FBD58;
-    box-shadow: 0 0 20px #5FBD58;
+    @extend .icon;
+    background: #5fbd58;
+    box-shadow: 0 0 20px #5fbd58;
 }
 
 .ground {
-    background: #DA7C4D;
-    box-shadow: 0 0 20px #DA7C4D;
+    @extend .icon;
+    background: #da7c4d;
+    box-shadow: 0 0 20px #da7c4d;
 }
 
 .ice {
-    background: #75D0C1;
-    box-shadow: 0 0 20px #75D0C1;
+    @extend .icon;
+    background: #75d0c1;
+    box-shadow: 0 0 20px #75d0c1;
 }
 
 .normal {
-    background: #A0A29F;
-    box-shadow: 0 0 20px #A0A29F;
+    @extend .icon;
+    background: #a0a29f;
+    box-shadow: 0 0 20px #a0a29f;
 }
 
 .poison {
-    background: #B763CF;
-    box-shadow: 0 0 20px #B763CF;
+    @extend .icon;
+    background: #b763cf;
+    box-shadow: 0 0 20px #b763cf;
 }
 
 .psychic {
-    background: #FA8581;
-    box-shadow: 0 0 20px #FA8581;
+    @extend .icon;
+    background: #fa8581;
+    box-shadow: 0 0 20px #fa8581;
 }
 
 .rock {
-    background: #C9BB8A;
-    box-shadow: 0 0 20px #C9BB8A;
+    @extend .icon;
+    background: #c9bb8a;
+    box-shadow: 0 0 20px #c9bb8a;
 }
 
 .steel {
-    background: #5695A3;
-    box-shadow: 0 0 20px #5695A3;
+    @extend .icon;
+    background: #5695a3;
+    box-shadow: 0 0 20px #5695a3;
 }
 
 .water {
-    background: #539DDF;
-    box-shadow: 0 0 20px #539DDF;
+    @extend .icon;
+    background: #539ddf;
+    box-shadow: 0 0 20px #539ddf;
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+    position: relative;
+    width: $circle-size;
+    height: $circle-size;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+
+    > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $item-size;
+        height: $item-size;
+        margin: -($item-size / 2);
+
+        $angle: (360 / $item-count);
+        $rot: 0;
+
+        @for $i from 1 through $item-count {
+            &:nth-of-type(#{$i}) {
+                transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+            }
+
+            $rot: $rot + $angle;
+        }
+    }
+}
+
+.circle-container {
+    @include on-circle($item-count: 18, $circle-size: 20em, $item-size: 2.5em);
+    .icon {
+        display: block;
+        max-width: 100%;
+        border: solid 3px grey;
+        transition: 0.15s;
+        filter: grayscale(80%);
+        &:hover {
+            filter: grayscale(30%);
+        }
+        &:active {
+            filter: grayscale(0%);
+        }
+    }
+}
+
+.selected {
+    @extend .icon;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
 }
