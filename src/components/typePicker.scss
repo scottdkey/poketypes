@@ -1,7 +1,7 @@
 .picker-container {
-    width: 500px;
-    height: 500px;
     position: relative;
+    height: 50px;
+    width: 50px;
 }
 
 .icon {
@@ -31,6 +31,11 @@
 }
 
 .dark {
+    @extend .icon;
+    background: #595761;
+    box-shadow: 0 0 20px #595761;
+}
+.undefined {
     @extend .icon;
     background: #595761;
     box-shadow: 0 0 20px #595761;
@@ -163,7 +168,7 @@
 }
 
 .circle-container {
-    @include on-circle($item-count: 18, $circle-size: 10em, $item-size: 1.75em);
+    @include on-circle($item-count: 19, $circle-size: 10em, $item-size: 1.75em);
     margin: auto;
     position: absolute;
     top: 0;
@@ -185,8 +190,11 @@
     }
 }
 .circleGroup {
-    position: relative;
-    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .selected {
@@ -198,5 +206,6 @@
     left: 0;
     right: 0;
     &:hover {
+        color: grey;
     }
 }

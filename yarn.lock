@@ -1143,6 +1143,190 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@bit/semantic-org.semantic-ui-react.icon@^0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.icon/-/semantic-org.semantic-ui-react.icon-0.88.2.tgz#95783a5df04039d8c80a7a73416aa251ca271360"
+  integrity sha1-lXg6XfBAOdjICnpzQWqiUconE2A=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.88.2"
+    classnames "^2.2.6"
+    lodash "^4.17.15"
+    prop-types "^15.7.2"
+
+"@bit/semantic-org.semantic-ui-react.internal.genericd@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.internal.genericd/-/semantic-org.semantic-ui-react.internal.genericd-0.88.2.tgz#034f568562cc67187058278e18736edbc956983a"
+  integrity sha1-A09WhWLMZxhwWCeOGHNu28lWmDo=
+
+"@bit/semantic-org.semantic-ui-react.internal.utils.index@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.internal.utils.index/-/semantic-org.semantic-ui-react.internal.utils.index-0.88.2.tgz#d2af63ce6d7e8171775e523413c2a04f2c6c3f6e"
+  integrity sha1-0q9jzm1+gXF3XlI0E8KgTyxsP24=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.auto-controlled-component" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.child-mapping" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.children-utils" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.class-name-builders" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.create-pagination-items" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.custom-prop-types" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.does-node-contain-click" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.event-stack" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.factories" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.get-element-type" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.get-unhandled-props" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.html-props-utils" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.is-browser" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.leven" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.make-debugger" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.modern-auto-controlled-component" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.normalize-offset" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.normalize-transition-duration" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.number-to-word" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.object-diff" "0.88.2"
+    "@bit/semantic-org.semantic-ui-react.utils.sui" "0.88.2"
+
+"@bit/semantic-org.semantic-ui-react.utils.auto-controlled-component@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.auto-controlled-component/-/semantic-org.semantic-ui-react.utils.auto-controlled-component-0.88.2.tgz#54b34d48c09bde84543ff0ba0e098be7d8fbfc09"
+  integrity sha1-VLNNSMCb3oRUP/C6DgmL59j7/Ak=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.child-mapping@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.child-mapping/-/semantic-org.semantic-ui-react.utils.child-mapping-0.88.2.tgz#35b8f975699f709df56369265f9a784e419642d7"
+  integrity sha1-Nbj5dWmfcJ31Y2kmX5p4TkGWQtc=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.children-utils@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.children-utils/-/semantic-org.semantic-ui-react.utils.children-utils-0.88.2.tgz#f9d20867b465921437c3186af4f6ad37884ebbb2"
+  integrity sha1-+dIIZ7RlkhQ3wxhq9PatN4hOu7I=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.class-name-builders@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.class-name-builders/-/semantic-org.semantic-ui-react.utils.class-name-builders-0.88.2.tgz#7c6b03f4318206bd494796edcf1069d18c37bb39"
+  integrity sha1-fGsD9DGCBr1JR5btzxBp0Yw3uzk=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.number-to-word" "0.88.2"
+
+"@bit/semantic-org.semantic-ui-react.utils.create-pagination-items@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.create-pagination-items/-/semantic-org.semantic-ui-react.utils.create-pagination-items-0.88.2.tgz#8466aa7d94b7d7284d8b3792f3b72e86e25764ca"
+  integrity sha1-hGaqfZS31yhNizeS87cuhuJXZMo=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.custom-prop-types@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.custom-prop-types/-/semantic-org.semantic-ui-react.utils.custom-prop-types-0.88.2.tgz#ac46160a3d89b20e8354e80c78f7f694b88a9df9"
+  integrity sha1-rEYWCj2Jsg6DVOgMePf2lLiKnfk=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.leven" "0.88.2"
+    lodash "^4.17.15"
+    prop-types "^15.7.2"
+
+"@bit/semantic-org.semantic-ui-react.utils.does-node-contain-click@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.does-node-contain-click/-/semantic-org.semantic-ui-react.utils.does-node-contain-click-0.88.2.tgz#22571e202f283d8c63f2728ff4588932625a4ce4"
+  integrity sha1-IlceIC8oPYxj8nKP9FiJMmJaTOQ=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.event-stack@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.event-stack/-/semantic-org.semantic-ui-react.utils.event-stack-0.88.2.tgz#2d7107abc6eb66c9276bbb0fb556debd547cc0cd"
+  integrity sha1-LXEHq8brZskna7sPtVbevVR8wM0=
+  dependencies:
+    "@semantic-ui-react/event-stack" "^3.1.0"
+
+"@bit/semantic-org.semantic-ui-react.utils.factories@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.factories/-/semantic-org.semantic-ui-react.utils.factories-0.88.2.tgz#4eea3de23b51d8d1b0e70c1f266f8ef34d72b426"
+  integrity sha1-Tuo94jtR2NGw5wwfJm+O801ytCY=
+  dependencies:
+    classnames "^2.2.6"
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.get-element-type@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.get-element-type/-/semantic-org.semantic-ui-react.utils.get-element-type-0.88.2.tgz#4363f8e295f711170a85c36b32f9cd30b620a109"
+  integrity sha1-Q2P44pX3ERcKhcNrMvnNMLYgoQk=
+
+"@bit/semantic-org.semantic-ui-react.utils.get-unhandled-props@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.get-unhandled-props/-/semantic-org.semantic-ui-react.utils.get-unhandled-props-0.88.2.tgz#cb286931bafa57f9fd0d88aac232b6e53460ad9f"
+  integrity sha1-yyhpMbr6V/n9DYiqwjK25TRgrZ8=
+
+"@bit/semantic-org.semantic-ui-react.utils.html-props-utils@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.html-props-utils/-/semantic-org.semantic-ui-react.utils.html-props-utils-0.88.2.tgz#2ff66735f840ada03912b7eeac04c1b37b2cd942"
+  integrity sha1-L/ZnNfhAraA5ErfurATBs3ss2UI=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.is-browser@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.is-browser/-/semantic-org.semantic-ui-react.utils.is-browser-0.88.2.tgz#d6fe0d54db5309075e6315f5f0a72055feb15599"
+  integrity sha1-1v4NVNtTCQdeYxX18KcgVf6xVZk=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.leven@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.leven/-/semantic-org.semantic-ui-react.utils.leven-0.88.2.tgz#8379f0c96cb86a423ac920325c358723f3d2c22a"
+  integrity sha1-g3nwyWy4akI6ySAyXDWHI/PSwio=
+
+"@bit/semantic-org.semantic-ui-react.utils.make-debugger@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.make-debugger/-/semantic-org.semantic-ui-react.utils.make-debugger-0.88.2.tgz#db7b53c7c2a3364e9759a64cdad4ff89ffe7dc24"
+  integrity sha1-23tTx8KjNk6XWaZM2tT/if/n3CQ=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.is-browser" "0.88.2"
+    debug "^4.1.1"
+
+"@bit/semantic-org.semantic-ui-react.utils.modern-auto-controlled-component@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.modern-auto-controlled-component/-/semantic-org.semantic-ui-react.utils.modern-auto-controlled-component-0.88.2.tgz#e80e013ef3b6c573e104c2bb37ca1a112d315290"
+  integrity sha1-6A4BPvO2xXPhBMK7N8oaES0xUpA=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.auto-controlled-component" "0.88.2"
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.normalize-offset@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.normalize-offset/-/semantic-org.semantic-ui-react.utils.normalize-offset-0.88.2.tgz#a53dfe8868a2485404f0ffc3f4ccd16b8a0272a8"
+  integrity sha1-pT3+iGiiSFQE8P/D9MzRa4oCcqg=
+
+"@bit/semantic-org.semantic-ui-react.utils.normalize-transition-duration@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.normalize-transition-duration/-/semantic-org.semantic-ui-react.utils.normalize-transition-duration-0.88.2.tgz#e2459604c047cbcf4862cfab2dbccea122eb4f7e"
+  integrity sha1-4kWWBMBHy89IYs+rLbzOoSLrT34=
+
+"@bit/semantic-org.semantic-ui-react.utils.number-to-word@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.number-to-word/-/semantic-org.semantic-ui-react.utils.number-to-word-0.88.2.tgz#6fab0d39f79b8c9e0e131a9de68e789f1d8880ba"
+  integrity sha1-b6sNOfebjJ4OExqd5o54nx2IgLo=
+
+"@bit/semantic-org.semantic-ui-react.utils.object-diff@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.object-diff/-/semantic-org.semantic-ui-react.utils.object-diff-0.88.2.tgz#aac5db8b08751afbeea7eef668fde0b30e7fa576"
+  integrity sha1-qsXbiwh1Gvvup+72aP3gsw5/pXY=
+  dependencies:
+    lodash "^4.17.15"
+
+"@bit/semantic-org.semantic-ui-react.utils.sui@0.88.2":
+  version "0.88.2"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.sui/-/semantic-org.semantic-ui-react.utils.sui-0.88.2.tgz#04ff2d8065dd5e2986c8cf0541700e9c5d7b0b6b"
+  integrity sha1-BP8tgGXdXimGyM8FQXAOnF17C2s=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.number-to-word" "0.88.2"
+    lodash "^4.17.15"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.npmjs.org/@cnakazawa/watch/-/watch-1.0.4.tgz"
@@ -1588,6 +1772,14 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@semantic-ui-react/event-stack@^3.1.0":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-3.1.2.tgz#14fac9796695aa3967962d94ea9733a85325f9c4"
+  integrity sha512-Yd0Qf7lPCIjzJ9bZYfurlNu2RDXT6KKSyubHfYK3WjRauhxCsq6Fk2LMRI9DEvShoEU+AsLSv3NGkqXAcVp0zg==
+  dependencies:
+    exenv "^1.2.2"
+    prop-types "^15.6.2"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
@@ -3530,6 +3722,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.npmjs.org/clean-css/-/clean-css-4.2.3.tgz"
@@ -5152,6 +5349,11 @@ execa@^4.0.0:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
+
+exenv@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+  integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
 
 exit@^0.1.2:
   version "0.1.2"
@@ -9847,7 +10049,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.7.2:
+prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==

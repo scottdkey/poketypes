@@ -1,43 +1,57 @@
-import React, { FC, ReactChildren, useState } from "react"
+import React, { useState } from "react"
 import { PokeTypes, PokemonTypesInterface, PokeType } from "./PokemonType"
+import Icon from "@bit/semantic-org.semantic-ui-react.icon"
+const style = <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css' />
+import { ReactComponent as CloseIcon } from "../assets/svgs/close-button.svg"
 
 import "./typePicker.scss"
 
+interface typePicker {
+  setParentState(item: PokemonTypesInterface | undefined): void;
+}
 
-
-const TypePicker: FC = () => {
-  const [selected, setSelected] = useState<string>("dark");
+const TypePicker = ({ setParentState }: typePicker): JSX.Element => {
+  const [selected, setSelected] = useState<PokemonTypesInterface | undefined>(undefined);
   const [openSelector, setOpenSelector] = useState<boolean>(false)
 
-  const setState = (type: string) => {
+  const setState = (type: PokemonTypesInterface | undefined) => {
     setSelected(type)
     setOpenSelector(false)
+    setParentState(type)
   }
   const RenderAllTypes = ({ list }: { list: Array<PokemonTypesInterface> }) => {
-    return <div className={`circle-container`}>{list.map((item: PokemonTypesInterface, index) => (
-      <item.icon className={`icon ${item.type} ${index}`} key={item.type} onClick={() => setState(item.type)} />
-    ))}</div>
+    return <div className={`circle-container`}>{list.map((item: PokemonTypesInterface) => (
+      <item.icon className={`icon ${item.type}`} key={item.type} onClick={() => setState(item)} />
+
+    ))}
+      <CloseIcon className="undefined" onClick={() => setState(undefined)} />
+    </div>
 
   }
 
-  type RenderSelectedType = {
-    type: string
-  }
+  const RenderSelected = () => {
 
-  const RenderSelected = ({ type }: RenderSelectedType) => {
-    const p = PokeType(type)
+    const type = () => {
+      if (selected != undefined) {
+        return selected.type
+      } else {
+        return "unselected"
+      }
+    }
+    const p = PokeType(type())
     console.log(p)
 
     if (p == undefined) {
       return (
-        <>
-          <div> Nothing Selected</div>
-        </>
+        <div className={`icon selected`}>
+          {style}
+          <CloseIcon name="close" onClick={() => setOpenSelector(!openSelector)} />
+        </div>
       )
     } else {
       return (
         <>
-          <p.icon className={`icon ${p.type} selected`} onClick={() => setOpenSelector(!openSelector)} />
+          <p.icon className={`${p.type} selected`} onClick={() => setOpenSelector(!openSelector)} />
         </>
       )
     }
@@ -46,7 +60,7 @@ const TypePicker: FC = () => {
 
   return (
     <div className="picker-container">
-      <RenderSelected type={selected} />
+      <RenderSelected />
       {openSelector ? <RenderAllTypes list={PokeTypes} /> : null}
     </div >
   )

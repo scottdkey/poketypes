@@ -28,6 +28,7 @@
     ]
   },
   "dependencies": {
+    "@bit/semantic-org.semantic-ui-react.icon": "^0.88.2",
     "axios": "^0.21.1",
     "pokeapi-js-wrapper": "^1.2.0",
     "react": "^17.0.2",
