@@ -7,6 +7,8 @@ function App(): JSX.Element {
   const [typeOne, setTypeOne] = useState<PokemonTypesInterface | undefined>(undefined)
   const [typeTwo, setTypeTwo] = useState<PokemonTypesInterface>()
 
+  console.log(typeTwo)
+
 
   function SetTypeOne(item: PokemonTypesInterface) {
     setTypeOne(item)

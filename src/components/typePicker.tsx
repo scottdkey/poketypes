@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { PokeTypes, PokemonTypesInterface, PokeType } from "./PokemonType"
-import Icon from "@bit/semantic-org.semantic-ui-react.icon"
 const style = <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css' />
 import { ReactComponent as CloseIcon } from "../assets/svgs/close-button.svg"
 
