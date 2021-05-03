@@ -19,7 +19,7 @@ const TypePicker = ({ setParentState }: typePicker): JSX.Element => {
     setParentState(type)
   }
   const RenderAllTypes = ({ list }: { list: Array<PokemonTypesInterface> }) => {
-    return <div className={`circle-container`}>{list.map((item: PokemonTypesInterface) => (
+    return <div className={`circle-container`} style={{ zIndex: 99 }}>{list.map((item: PokemonTypesInterface) => (
       <item.icon className={`icon ${item.type}`} key={item.type} onClick={() => setState(item)} />
 
     ))}
@@ -38,27 +38,25 @@ const TypePicker = ({ setParentState }: typePicker): JSX.Element => {
       }
     }
     const p = PokeType(type())
-    console.log(p)
 
     if (p == undefined) {
       return (
         <div className={`icon selected`}>
           {style}
-          <CloseIcon name="close" onClick={() => setOpenSelector(!openSelector)} />
+          <CloseIcon name="close" onClick={() => setOpenSelector(!openSelector)} style={{ zIndex: 1 }} />
         </div>
       )
     } else {
       return (
         <>
-          <p.icon className={`${p.type} selected`} onClick={() => setOpenSelector(!openSelector)} />
+          <p.icon className={`${p.type} selected`} onClick={() => setOpenSelector(!openSelector)} style={{ zIndex: 1 }} />
         </>
       )
     }
   }
 
-
   return (
-    <div className="picker-container">
+    <div className="picker-container" >
       <RenderSelected />
       {openSelector ? <RenderAllTypes list={PokeTypes} /> : null}
     </div >

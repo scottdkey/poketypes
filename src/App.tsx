@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './App.scss';
 import { PokemonTypesInterface } from './components/PokemonType';
 import TypePicker from "./components/typePicker"
+import TypeCompairison from "./components/TypeCompairison"
 
 function App(): JSX.Element {
   const [typeOne, setTypeOne] = useState<PokemonTypesInterface | undefined>(undefined)
   const [typeTwo, setTypeTwo] = useState<PokemonTypesInterface>()
 
-  console.log(typeTwo)
 
 
   function SetTypeOne(item: PokemonTypesInterface) {
@@ -19,8 +19,12 @@ function App(): JSX.Element {
   return (
     <div className="App">
       <div className="Body">
-        <TypePicker setParentState={SetTypeOne} />
-        {typeOne == undefined ? null : <TypePicker setParentState={SetTypeTwo} />}
+        <div className="picker-area">
+          <TypePicker setParentState={SetTypeOne} />
+          {typeOne == undefined ? null : <TypePicker setParentState={SetTypeTwo} />}
+        </div>
+        <TypeCompairison compairisonObject={typeOne} />
+        <TypeCompairison compairisonObject={typeTwo} />
       </div>
     </div>
   );

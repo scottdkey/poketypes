@@ -182,7 +182,7 @@
         transition: 0.15s;
         filter: grayscale(80%);
         &:hover {
-            filter: grayscale(30%);
+            filter: grayscale(0%);
         }
         &:active {
             filter: grayscale(0%);
@@ -205,6 +205,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    border-radius: 50%;
     &:hover {
         color: grey;
     }
